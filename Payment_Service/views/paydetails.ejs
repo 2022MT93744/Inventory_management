@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Details</title>
+</head>
+<body>
+    <h1>Payment Details</h1>
+    <ul>
+        <% datad3.forEach((pay) => { %>
+            <li>P_ID: <%= pay.P_ID %>, P_Amount: <%= pay.P_Amount %>,P_type: <%= pay.P_type %>, P_date: <%= pay.P_date %></li>
+            <li>--------</li>
+        <% }); %>
+    </ul>
+
+    <a href="http://localhost:8000/payment">Go Back</a>
+
+</body>
+</html>
