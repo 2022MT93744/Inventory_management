@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Details</title>
+</head>
+<body>
+    <h1>Inventory Details</h1>
+    <ul>
+        <% datad3.forEach((inve) => { %>
+            <li>Inv_ID: <%= inve.Inv_ID %>, Inv_Name: <%= inve.Inv_Name %>,Inv_Price: <%= inve.Inv_Price %>, Inv_type: <%= inve.Inv_type %></li>
+            <li>--------</li>
+        <% }); %>
+    </ul>
+
+    <a href="http://localhost:8000/invfdetailsf">Go Back</a>
+
+</body>
+</html>
