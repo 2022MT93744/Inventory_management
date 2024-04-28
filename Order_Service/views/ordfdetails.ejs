@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Details</title>
+</head>
+<body>
+    <h1>Order Details</h1>
+    <ul>
+        <% datad3.forEach((ord) => { %>
+            <li>O_ID: <%= ord.O_ID %>, O_amount: <%= ord.O_amount %>,O_quant: <%= ord.O_quant %>, In_ID: <%= ord.In_ID %>, In_type: <%= ord.In_type %></li>
+            <li>--------</li>
+        <% }); %>
+    </ul>
+
+    <a href="http://localhost:8000/order">Go Back</a>
+
+</body>
+</html>
